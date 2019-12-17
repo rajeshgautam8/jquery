@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("p").hide("slow", function(){
+				alert("The paragraph is now hidden");
+			});
+		});
+
+		$("#btn2").click(function(){
+			$("p").show("slow", function(){
+				alert("The paragraph is now shown");
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	
+	<button id="btn1" style="width: 100px;background-color: red;color: white;padding: 10px;">Hide</button>
+	<button id="btn2" style="width: 100px;background-color: green;color: white;padding: 10px;">Show</button>
+	<p>When hide button is  content will be hidden.</p>
+	<p>When show button is  content will be shown.</p>
+
+</body>
+</html>

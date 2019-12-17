@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#w3s").attr({
+      "href" : "https://www.w3schools.com/jquery/",
+      "title" : "W3Schools jQuery Tutorial"
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<p><a href="https://www.w3schools.com" title="some title" id="w3s">W3Schools.com</a></p>
+
+<button>Change href and title</button>
+
+<p>Initial w3school.com</p>
+<p> After changed w3schools.com/jquery</p>
+
+</body>
+</html>

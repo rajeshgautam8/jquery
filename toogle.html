@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQUERY toogle</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").toggle();
+			});
+		});
+	</script>
+	<!--
+		$(selector).toogle(speed,callback);
+		speed can be slow fast or in miliseconds
+		callback function is optional
+
+	-->
+</head>
+<body>
+	<button>Toggle between hiding and showing the paragraphs</button>
+	<p>This is a paragraph one</p>
+	<p>This is another another paragraph.</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery events</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/*
+			$('#btn').click(function(){
+				$('.p1').hide();
+			});
+
+			$('#btn').dblclick(function(){
+				$('.p2').hide();
+			});
+
+			$('#p1').mouseenter(function(){
+				alert('You entered p1');
+			});
+
+			$('#p1').mouseleave(function(){
+				alert('You leaved p1');
+			});
+
+			$("#p1").hover(function(){
+    			alert("You entered p1!");
+  			},
+  			function(){
+    			alert("Bye! You now leave p1!");
+  			});
+
+			$('#p1').mousedown(function(){
+				alert('Mouse down over p1');
+			});
+			
+			$('#p1').mouseup(function(){
+				alert('Mouse up over p1');
+			});
+			*/
+			$("input").focus(function(){
+				$(this).css('background-color','yellow')
+			});
+
+			$("input").blur(function(){
+				$(this).css('background-color','green')
+			})
+		});
+	</script>
+</head>
+<body>
+	<!--
+	<p class="p1">If btn clicked i will hide</p>
+	<p class="p2">If btn double clicked i will hide</p> 
+	<button id="btn">Click me</button>
+	<p id="p1">Mouse over me</p>
+	-->
+	Name: <input type="text" name="fullname"><br><br>
+	Email: <input type="text" name="email">
+</body>
+</html>
